@@ -1,0 +1,414 @@
+/* *configura todo o site*/
+
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* "a" todas as ancoras estarão na configuração abaixo*/
+
+a {
+
+    color: #3c96ed;
+    text-decoration: none;
+}
+
+/*Todo o body estará na configuraçãoa abaixo*/
+
+body {
+
+    background: #FFF;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+/*pega a altura e largura de todo o site*/
+
+#wrapper {
+
+    height: 100vh;
+
+
+}
+
+/* container é a configuração da caixa que dentro vai a caixa da esquerda e da direita*/
+
+#container {
+
+    margin: 0 auto;
+    min-height: 100%;
+    width: 800px;
+    display: flex;
+    align-items: center;
+
+}
+
+/*column é a configuração de ambas colunas ( direita e esquerda )*/
+
+.column {
+    flex-grow: 1;
+    width: 50%;
+}
+
+/* é a configuração do lado esquedo da pagina */
+
+.left {
+
+    background-image: url("assets/main-foto.png");
+    background-size: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    margin-bottom: 50px;
+
+}
+
+.right {
+
+    padding-left: 20px;
+}
+
+/*configuração do lado direito*/
+
+.login-panel {
+
+    background-color: #FFF;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/*imagem do sujeitogram*/
+
+.logo-img {
+
+    width: 175px;
+    user-select: none;
+
+}
+
+/*formulario dos inputs*/
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+/*configurando o input do login e senha ao mesmo tempo*/
+
+input[type="password"],
+input[type="text"] {
+
+    background-color: #FFF;
+    border: 1px solid rgb(236, 234, 234);
+    height: 40px;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 13px;
+    width: 320px;
+    color: #000000;
+}
+
+/*configurando o texto de dentro do input*/
+
+input[type="password"]::placeholder,
+input[type="text"]::placeholder {
+
+    color: rgb(165, 164, 164)
+}
+
+/*configuando o foco quando clica para digitar as informações*/
+
+input[type="password"]:focus,
+input[type="text"]:focus {
+
+    outline: 0;
+    border: 1px solid #a1a1a1;
+}
+
+/*configurando o botão entrar*/
+
+input[type="submit"] {
+
+    background-color: #3c96ed;
+    color: #FFFFFF;
+    width: 320px;
+    margin-top: 10px;
+    border: 0;
+    font-size: 16px;
+    height: 30px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-bottom: 10PX;
+    cursor: pointer;
+
+}
+
+/*configurando o back da parte cadastre-se*/
+
+.infobox {
+    background-color: #FFFFFF;
+    height: 60px;
+    border: 1px solid rgb(236, 234, 234);
+    margin: 10px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*serve para não deixar selecionar o texto*/
+
+.infobox p {
+
+
+    user-select: none;
+
+}
+
+/*configurando o link do cadastre-se*/
+
+.infobox p a {
+
+    font-weight: bold;
+    user-select: none;
+}
+
+/*configurando o app do google play e aplle*/
+
+.app {
+
+    margin-top: 20px;
+    text-align: center;
+    user-select: none;
+
+}
+
+/*configurando o espaçõ de cima dos botoes*/
+
+.app-buttons {
+
+    margin-top: 16px;
+
+}
+
+/*configurando a largura e espaçamento interno em cima e em baixo de 0 e 2px nas laterais */
+
+.app-buttons img {
+
+    height: 40px;
+    padding: 0 2px;
+}
+
+/*configurando o rodapé*/
+
+.footer {
+
+    text-align: center;
+    height: 50px;
+    margin-top: -50px;
+    user-select: none;
+}
+
+/*configurando os links do rodapé*/
+
+.footer-app a {
+
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 8px;
+    user-select: none;
+
+}
+
+/*configuramndo a escrita de @ 2022 Instagram*/
+
+.text-small {
+
+    font-size: 12px;
+    font-weight: bold;
+    color: grey;
+    text-transform: uppercase;
+    padding-left: 20px;
+    display: inline-block;
+    user-select: none;
+
+}
+
+
+
+/*Configuração pagina cadastro INICIO */
+
+
+
+#container-cadastro {
+
+    margin: 0 auto;
+    min-height: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+
+}
+
+.mensagem {
+
+    margin: 10px 70px;
+
+}
+
+.mensagem span {
+
+    color: #8e8e8e;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    font-size: 17px;
+    line-height: 20px;
+
+}
+
+
+
+.facebook {
+
+    background-color: #3c96ed;
+    color: #FFFFFF;
+    width: 320px;
+    margin-top: 10px;
+    border: 0;
+    font-size: 15px;
+    height: 30px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-bottom: 10PX;
+    cursor: pointer;
+
+}
+
+.divisor-ou {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.line {
+
+    height: 1px;
+    background-color: #e6e6e6;
+    width: 35%;
+}
+
+.ou {
+
+    font-weight: bold;
+    margin: 0 2.5%;
+    color: #8e8e8e;
+    user-select: none;
+}
+
+
+
+@media (max-width:800px) {
+
+    .left {
+
+        display: none;
+    }
+
+    #container {
+
+        width: 70%;
+    }
+
+    .right {
+
+        padding-left: 0;
+    }
+
+    input[type="password"],
+    input[type="text"] {
+
+        background-color: #FFF;
+        border: 1px solid rgb(236, 234, 234);
+        height: 40px;
+        border-radius: 4px;
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 12px;
+        width: 280px;
+        color: #000000;
+    }
+
+    input[type="submit"] {
+
+        background-color: #3c96ed;
+        color: #FFFFFF;
+        width: 280px;
+        margin-top: 10px;
+        border: 0;
+        font-size: 12px;
+        height: 30px;
+        border-radius: 4px;
+        font-weight: bold;
+        margin-bottom: 10PX;
+        cursor: pointer;
+
+    }
+
+    .infobox p {
+        font-size: 12px;
+    }
+
+    .app {
+
+        font-size: 14px;
+    }
+
+    #container-cadastro {
+
+        width: 90%;
+
+    }
+
+    .footer{
+
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+
+}
+
+@media (max-width: 460px) {
+
+    #container {
+
+        width: 90%;
+
+    }
+
+    .footer{
+
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+  
+
+}
