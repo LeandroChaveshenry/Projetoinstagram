@@ -20,7 +20,14 @@ a {
 
 body {
 
-    background: #FFF;
+    --background: #fafafa;
+    --border: #e6e6e6;
+    --focus: #a1a1a1;
+    --color: #8e8e8e;
+
+
+
+    background: var(--background);
     height: 100%;
     width: 100%;
     margin: 0;
@@ -81,8 +88,8 @@ body {
 
 .login-panel {
 
-    background-color: #FFF;
-    border: 1px solid #e6e6e6;
+    background-color: var(--background);
+    border: 1px solid var(--border);
     text-align: center;
     padding: 20px 0;
 }
@@ -112,8 +119,8 @@ form {
 input[type="password"],
 input[type="text"] {
 
-    background-color: #FFF;
-    border: 1px solid rgb(236, 234, 234);
+    background-color: var(--background);
+    border: 1px solid var(--border);
     height: 40px;
     border-radius: 4px;
     margin-top: 10px;
@@ -128,7 +135,7 @@ input[type="text"] {
 input[type="password"]::placeholder,
 input[type="text"]::placeholder {
 
-    color: rgb(165, 164, 164)
+    color: var(--focus);
 }
 
 /*configuando o foco quando clica para digitar as informações*/
@@ -137,7 +144,7 @@ input[type="password"]:focus,
 input[type="text"]:focus {
 
     outline: 0;
-    border: 1px solid #a1a1a1;
+    border: 1px solid var(--focus);
 }
 
 /*configurando o botão entrar*/
@@ -145,7 +152,7 @@ input[type="text"]:focus {
 input[type="submit"] {
 
     background-color: #3c96ed;
-    color: #FFFFFF;
+    color: var(--background);
     width: 320px;
     margin-top: 10px;
     border: 0;
@@ -161,9 +168,9 @@ input[type="submit"] {
 /*configurando o back da parte cadastre-se*/
 
 .infobox {
-    background-color: #FFFFFF;
+    background-color: var(--background);
     height: 60px;
-    border: 1px solid rgb(236, 234, 234);
+    border: 1px solid var(--border);
     margin: 10px auto 0;
     display: flex;
     align-items: center;
@@ -241,7 +248,7 @@ input[type="submit"] {
 
     font-size: 12px;
     font-weight: bold;
-    color: grey;
+    color: var(--color);
     text-transform: uppercase;
     padding-left: 20px;
     display: inline-block;
@@ -273,7 +280,7 @@ input[type="submit"] {
 
 .mensagem span {
 
-    color: #8e8e8e;
+    color: var(--color);
     font-weight: bold;
     text-align: center;
     justify-content: center;
@@ -287,7 +294,7 @@ input[type="submit"] {
 .facebook {
 
     background-color: #3c96ed;
-    color: #FFFFFF;
+    color: var(--background);
     width: 320px;
     margin-top: 10px;
     border: 0;
@@ -310,7 +317,7 @@ input[type="submit"] {
 .line {
 
     height: 1px;
-    background-color: #e6e6e6;
+    background-color: var(--border);
     width: 35%;
 }
 
@@ -318,7 +325,7 @@ input[type="submit"] {
 
     font-weight: bold;
     margin: 0 2.5%;
-    color: #8e8e8e;
+    color: var(--color);
     user-select: none;
 }
 
@@ -344,8 +351,8 @@ input[type="submit"] {
     input[type="password"],
     input[type="text"] {
 
-        background-color: #FFF;
-        border: 1px solid rgb(236, 234, 234);
+        background-color: var(--background);
+        border: 1px solid var(--border);
         height: 40px;
         border-radius: 4px;
         margin-top: 10px;
@@ -358,7 +365,7 @@ input[type="submit"] {
     input[type="submit"] {
 
         background-color: #3c96ed;
-        color: #FFFFFF;
+        color: var(--background);
         width: 280px;
         margin-top: 10px;
         border: 0;
